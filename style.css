@@ -1,0 +1,252 @@
+:root {
+  --bs-primary: #0d47a1;
+  --bs-primary-rgb: 13, 71, 161;
+  --bs-primary-text-emphasis: #052c65;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding-top: 56px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* Scroll Down Button */
+.scroll-down-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.scroll-down-btn i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 15px var(--bs-primary);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.8),
+                 0 0 30px var(--bs-primary);
+  }
+}
+
+.scroll-down-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navbar Customization */
+.navbar-dark {
+  background-color: #fff !important;
+}
+
+/* Carousel Styles */
+#mainCarousel {
+  height: 400px;
+  background: linear-gradient(rgba(13, 71, 161, 0.9), rgba(25, 118, 210, 0.9));
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+}
+
+.carousel-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Main Container Styles */
+.main-container {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.content-left {
+  padding-right: 2rem;
+}
+
+.department-title {
+  color: var(--bs-primary-text-emphasis);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.department-description {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.content-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 300px;
+}
+
+@media (min-width: 576px) {
+  .d-sm-none {
+      display: none !important;
+  }
+}
+
+.subscribe-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  color: var(--bs-primary-text-emphasis);
+  font-weight: 600;
+}
+
+.title{
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* News Section */
+.news-item {
+  height: 100%;
+}
+
+.news-item .date {
+  color: var(--bs-primary);
+  font-size: 0.875rem;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+/* Footer Links */
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* Modal Customization */
+.modal-header {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 2rem 0;
+  }
+  
+  .content-left {
+    padding-right: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .content-right {
+    min-height: auto;
+  }
+  
+  .department-title {
+    font-size: 2rem;
+  }
+  
+  .carousel-content h2 {
+    font-size: 2rem;
+  }
+}
+
+.about-section {
+  padding: 60px 12px;
+  font-family: Arial, sans-serif;
+}
+.about-section > p{
+  font-size: 19px;
+}
+.about-section h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.stats {
+  margin-top: 40px;
+}
+.stats .stat-item {
+  text-align: center;
+}
+.stats .stat-item .counter {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stats .stat-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 600px){
+  .about-section p{
+    font-size: 12px;
+  }
+  .about-section h1{
+    font-size: 3.4rem;
+  }
+}

@@ -1,0 +1,260 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Website</title>
+  <!-- Google Fonts Manjari Malayalam -->
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ensures the right-side article takes up full height */
+    .full-height {
+      height: 100%;
+    }
+
+    /* If you want images to fit the height */
+    .img-fit {
+      height: 100%;
+      object-fit: cover;
+      /* Keeps the aspect ratio while filling the container */
+    }
+
+    /* Remove underline from links and make the entire card clickable */
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-link:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Footer styles */
+    .footer {
+      padding: 40px 0;
+      background-color: #1b1b1b;
+      /* Dark background */
+      color: #ffffff;
+      /* Light text */
+      font-size: 0.9rem;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+  </style>
+</head>
+
+<body style="padding-top: 50px;">
+  <!-- Rest of the HTML remains exactly the same -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="container">
+      <a class="navbar-brand text-primary-emphasis" href="/index.html">
+        <img src="/logo.jpg" alt="" width="28" height="28" class="d-inline-block align-text-top">
+        Dept. of Fiqh & Usul al Fiqh</a>
+      <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-primary-emphasis" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis" href="/program/program.html">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis" href="/Publication/publication.html">Publication</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis" href="/team/team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis" href="/about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis" href="/contact us/contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <!-- Top row with two articles -->
+    <div class="row">
+      <!-- Left large article -->
+      <div class="col-lg-8 col-md-12">
+        <!-- Wrap the card inside an <a> tag to make it clickable -->
+        <a href="../Publication/culture/article-1.html" class="card-link">
+          <div class="card h-100">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="large-image">
+            <div class="card-body">
+              <h5 class="card-title">Culture</h5>
+              <h3 class="card-text" style="font-family: 'Manjari', sans-serif;">ലബനാനിലേക്ക് പടരുന്ന സംഘര്‍ഷം: ആരു
+                ജയിച്ചാലും തോല്‍ക്കുന്നത് മനുഷ്യത്വമാണ്</h3>
+              <p class="text-muted">Nafeeh MP - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right small article (adjusted height) -->
+      <!-- <div class="col-lg-4 col-md-12"> -->
+        <!-- <a href="article-packet-203.html" class="card-link">
+          <div class="card h-100 full-height d-flex flex-column">
+            <img src="" class="card-img-top img-fit" alt="small-image">
+            <div class="card-body">
+              <h5 class="card-title">Packet 203</h5>
+              <p class="text-muted">Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div> -->
+
+    <!-- Bottom row with multiple smaller articles -->
+    <div class="row mt-4">
+      <!-- Article 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-1.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Sample Title for Article</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-2.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Another Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-3.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Third Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-4.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Fourth Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-5.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Fifth Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 6 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-6.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Sixth Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 7 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-7.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Seventh Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Article 8 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="article-8.html" class="card-link">
+          <div class="card">
+            <img src="/img/pb-1.jpg" class="card-img-top" alt="article-image">
+            <div class="card-body">
+              <h6 class="card-title">ART</h6>
+              <p class="card-text">Eight Article Title</p>
+              <p class="text-muted">By Author - Nov 01, 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4 class="mb-3">Contact Us</h4>
+          <p>Email: deptfiqhbuac@gmail.com</p>
+          <p>Phone: (91) 9061791107</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="mb-3">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="/program/program.html" class="text-light text-decoration-none">Programs</a></li>
+            <li><a href="/Publication/publication.html" class="text-light text-decoration-none">Publications</a></li>
+            <li><a href="/team/team.html" class="text-light text-decoration-none">Team</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="mb-3">Follow Us</h4>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light text-decoration-none">Twitter</a>
+            <a href="#" class="text-light text-decoration-none">LinkedIn</a>
+            <a href="#" class="text-light text-decoration-none">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-4 border-top border-secondary">
+        <p class="mb-0">&copy; 2024 Department of Fiqh & Usul al Fiqh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
