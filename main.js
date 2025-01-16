@@ -22,7 +22,7 @@ const newsItems = [
     src: '/img/ps-1.jpg'
   },
   {
-    src: '/img/ps-2.jpg'
+    src: '/img/ps-11.jpg'
   },
   {
     src: '/img/ps-10.jpg'
